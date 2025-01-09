@@ -12,6 +12,20 @@ $ pip install worldfinder
 
 - TODO
 
+## Functions and Data
+### Data
+- The data for this library will consist of an object containing all countries and their respective capitals
+### Functions
+- getCapital(country) 
+
+        This function will retrieve the capital given a country name passed as an input from a local data object consisting of capital and country data.
+
+## Contributors
+- Brian Chang
+- Michael Gelfand
+- Elaine Chu
+- Coco Shi
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
