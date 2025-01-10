@@ -40,3 +40,26 @@ def getCountries(city):
     ["Canada", "England", "United States", "Australia", "South Africa", "Jamaica"]
     """
     pass
+
+def checkCity(city, country):
+    '''
+    Returns boolean on whether a given city is present in the given country
+
+    Parameters
+    ----------
+    city: str
+        The name of a city
+    country: str
+        The name of a country
+
+    Returns
+    -------
+    boolean
+        True if the given city name is a city in the given country
+
+    Examples
+    -------
+    >>> checkCity("London", "Canada")
+    True
+    '''
+    pass
