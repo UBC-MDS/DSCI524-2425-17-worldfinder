@@ -20,6 +20,10 @@ $ pip install worldfinder
 
         This function will retrieve the capital given a country name passed as an input from a local data object consisting of capital and country data.
 
+- getCountries(city)
+
+        This function searches for a specified city and returns a list of unique countries where the city is located.
+
 ## Contributors
 - Brian Chang
 - Michael Gelfand
