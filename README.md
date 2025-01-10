@@ -28,6 +28,10 @@ $ pip install worldfinder
 
         This function will return a boolean on if the given city exist in the given country.
 
+- getCountryStatistic(country, statistic)
+
+        This function will return a integer or float representing a specified statistic for a given country.
+
 ## worldfinder in the Python Ecosystem
 The PyPI server hosts numerous packages related to country and city data. Among these, we have identified a few noteworthy examples that offer functionality similar to our package. For instance, a package with functionality similar to our getCapital function can be found [here](https://pypi.org/project/country-capitals/). Similarly, a package providing features comparable to our countryinfo function, which retrieves information about a specified country, is available [here](https://pypi.org/project/Countrydetails/). For functionality resembling our getCountries function, another example can be found [here](https://pypi.org/project/geopy/).
 
