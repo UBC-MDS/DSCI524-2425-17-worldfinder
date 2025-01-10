@@ -24,6 +24,10 @@ $ pip install worldfinder
 
         This function searches for a specified city and returns a list of unique countries where the city is located.
 
+- checkCity(city, country)
+
+        This function checks if the given city exist in the given country and returns a boolean,
+
 ## Contributors
 - Brian Chang
 - Michael Gelfand
