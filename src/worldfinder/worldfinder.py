@@ -63,3 +63,28 @@ def checkCity(city, country):
     True
     '''
     pass
+
+def getCountryStatistic(country, statistic):
+    '''
+    Returns an integer or float representing a specific piece of 
+    information about a country. Possible statistics include population, GDP,
+    and surface area.
+
+    Parameters
+    ----------
+    country: str
+        The name of a country
+    statistic: str
+        The name of the statistic of interest
+
+    Returns
+    -------
+    integer or float
+        The value corresponding to the specified statistic for a specified country.
+
+    Examples
+    -------
+    >>> getCountryStatistic("Canada", "population")
+    41465298
+    '''
+    pass
