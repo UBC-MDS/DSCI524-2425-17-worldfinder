@@ -5,9 +5,14 @@ description = "This package will contain four functions that will perform action
 authors = ["Group 17"]
 license = "MIT"
 readme = "README.md"
+include = [
+    "src/worldfinder/data/countries.csv",
+    "src/worldfinder/data/cities.csv"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pandas = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
