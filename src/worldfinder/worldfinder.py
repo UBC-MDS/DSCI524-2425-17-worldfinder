@@ -126,4 +126,9 @@ def getCountryStatistic(country, statistic):
     >>> getCountryStatistic("Canada", "population")
     41465298
     '''
-    pass
+    country_df = load_countries_data()
+    statistic_title = statistic.title()
+    single_country_df = country_df[country_df["Country"].str.lower() == country.lower()]
+    stat = single_country_df.iloc[0][statistic_title]
+
+    return stat
