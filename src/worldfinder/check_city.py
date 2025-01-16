@@ -30,11 +30,11 @@ def check_city(city, country):
 
     if city == '':
         raise ValueError(
-            "city cannot be an empty string")
+            "Input city cannot be an empty string")
     
     if country == '':
         raise ValueError(
-            "country cannot be an empty string")
+            "Input country cannot be an empty string")
             
     cities = load_cities_data()
     

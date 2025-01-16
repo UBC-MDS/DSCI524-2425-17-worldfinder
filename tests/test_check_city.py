@@ -21,6 +21,15 @@ def test_value_error():
     with pytest.raises(ValueError, match="Input country is not in database, please ensure correct spelling or try alternative names."):
         check_city("Michigan", "Hyrule")
 
+def test_empty_string_error():
+    """
+    Test if function returns value error if input is empty
+    """
+    with pytest.raises(ValueError, match="Input city cannot be an empty string"):
+        check_city("", "Germany")
+    with pytest.raises(ValueError, match="Input country cannot be an empty string"):
+        check_city("Seoul", "")   
+
 def test_return_results():
     """
     Test if it returns results correctly
@@ -43,11 +52,4 @@ def test_blank_space():
     assert check_city(" Bangkok  ", "Thailand") == True
     assert check_city("Manila", "  Philippines  ") == True
 
-def test_empty_string():
-    """
-    Test if function returns value error if input is empty
-    """
-    with pytest.raises(ValueError, match="city cannot be an empty string"):
-        check_city("", "Germany")
-    with pytest.raises(ValueError, match="country cannot be an empty string"):
-        check_city("Seoul", "")    
+ 
