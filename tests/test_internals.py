@@ -22,7 +22,12 @@ def test_load_data_dir_path_non_string():
     Check TypeError is raised when given a non-string value for dir_path
     """
     non_string = 123
-    with pytest.raises(TypeError, match=f"dir_path should be a string, instead got '{type(non_string)}'"):
+    with pytest.raises(
+        TypeError,
+        match=(
+            f"dir_path should be a string, instead got '{type(non_string)}'"
+        )
+    ):
         load_data(non_string, "dummy_csv.csv")
 
 
@@ -31,7 +36,12 @@ def test_load_data_csv_name_non_string():
     Check TypeError is raised when given a non-string value for csv_name
     """
     non_string = 123
-    with pytest.raises(TypeError, match=f"csv_name should be a string, instead got '{type(non_string)}'"):
+    with pytest.raises(
+        TypeError,
+        match=(
+            f"csv_name should be a string, instead got '{type(non_string)}'"
+        )
+    ):
         load_data("tests", non_string)
 
 
@@ -40,7 +50,10 @@ def test_load_data_csv_name_not_csv():
     Check ValueError is raised when given a csv_name that does not end in .csv
     """
     non_csv_name = "dummy_csv"
-    with pytest.raises(ValueError, match='Provided csv_name does not end with .csv'):
+    with pytest.raises(
+        ValueError,
+        match='Provided csv_name does not end with .csv'
+    ):
         load_data("tests", non_csv_name)
 
 

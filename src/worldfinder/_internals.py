@@ -4,23 +4,38 @@ import os.path
 
 def load_data(dir_path, csv_name):
     """
-    Load data from the CSV file
-    
+    Load data from the CSV file.
+
     Parameters:
     -----------
+    dir_path : str
+        Path to directory containing the csv file
+
     csv_name : str
         File name of the dataset to be loaded
-    
+
     Returns:
     --------
     DataFrame
-        A Pandas DataFrame containing the countries data
+        A Pandas DataFrame containing the csv data
+
+    Raises:
+    -------
+    TypeError
+        If dir_path or csv_name are not a string.
+
+    ValueError
+        If csv_name does not end with .csv.
+
+    FileNotFoundError
+        If the file at the specified path does not exist.
 
     Examples:
     ---------
-    load_data("countries.csv")
-
+    >>> df = load_data("src/worldfinder/data", "countries.csv")
+    >>> df
     """
+
     # Check that csv_name is a string
     if not isinstance(csv_name, str):
         raise TypeError(
