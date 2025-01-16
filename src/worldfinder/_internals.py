@@ -24,9 +24,16 @@ def load_data(dir_path, csv_name):
     # Check that csv_name is a string
     if not isinstance(csv_name, str):
         raise TypeError(
-            f"country should be a string, instead got '{type(csv_name)}'"
+            f"csv_name should be a string, instead got '{type(csv_name)}'"
         )
 
+    # Check that dir_path is a string
+    if not isinstance(dir_path, str):
+        raise TypeError(
+            f"dir_path should be a string, instead got '{type(dir_path)}'"
+        )
+
+    # Check that csv_name ends with .csv
     if not csv_name.endswith('.csv'):
         raise ValueError(
             'Provided csv_name does not end with .csv'
@@ -36,7 +43,7 @@ def load_data(dir_path, csv_name):
     # Check that file exists at file path
     if not os.path.isfile(csv_path):
         raise FileNotFoundError(
-            f"No file exists at {csv_path}"
+            'File path does not exist'
         )
 
     return pd.read_csv(csv_path)
