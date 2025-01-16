@@ -22,16 +22,29 @@ def check_city(city, country):
     >>> checkCity("London", "Canada")
     True
     '''
-    if not isinstance(cities, str):
+    if not isinstance(city, str):
         raise TypeError("City input must be a string.")
     
     if not isinstance(country, str):
         raise TypeError("Country input must be a string.")
-    
-    
 
+    if city == '':
+        raise ValueError(
+            "city cannot be an empty string")
+    
+    if country == '':
+        raise ValueError(
+            "country cannot be an empty string")
+            
     cities = load_cities_data()
-    cities = cities[cities["country_name"].str.lower() == country.lower()][[
+    
+    if not bool(cities["country_name"].str.lower().eq(country.strip().lower()).any()):
+        raise ValueError("Input country is not in database, please ensure correct spelling or try alternative names.")
+
+    if not bool(cities["name"].str.lower().eq(city.strip().lower()).any()):
+        raise ValueError("Input city is not in database, please ensure correct spelling or try alternative names.")
+
+    cities = cities[cities["country_name"].str.lower() == country.strip().lower()][[
         "name"]]
         
-    return bool(cities["name"].str.lower().eq(city.lower()).any())
+    return bool(cities["name"].str.lower().eq(city.strip().lower()).any())
