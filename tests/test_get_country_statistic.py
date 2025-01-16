@@ -48,7 +48,7 @@ def test_get_country_statistic_statistic_non_string():
 
 def test_get_country_statistic_country_empty_string():
     """
-    Check TypeError is raised when given a non-string value for statistic
+    Check ValueError is raised when an empty string is used for country
     """
     empty_string = ""
     with pytest.raises(ValueError, match='country cannot be empty string'):
@@ -57,7 +57,7 @@ def test_get_country_statistic_country_empty_string():
 
 def test_get_country_statistic_statistic_empty_string():
     """
-    Check TypeError is raised when given a non-string value for statistic
+    Check ValueError is raised when an empty string is used for statistic
     """
     empty_string = ""
     with pytest.raises(ValueError, match='statistic cannot be empty string'):
@@ -66,7 +66,7 @@ def test_get_country_statistic_statistic_empty_string():
 
 def test_get_country_statistic_valid_statistic():
     """
-    Check TypeError is raised when given an invalid statistic
+    Check ValueError is raised when given an invalid statistic
     """
     invalid_statistic = "ThisIsWrong"
     with pytest.raises(ValueError, match='statistic must be population, gdp, birth rate, cpi, or unemployment rate'):
