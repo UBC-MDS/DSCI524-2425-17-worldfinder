@@ -71,3 +71,12 @@ def test_get_country_statistic_valid_statistic():
     invalid_statistic = "ThisIsWrong"
     with pytest.raises(ValueError, match='statistic must be population, gdp, birth rate, cpi, or unemployment rate'):
         get_country_statistic("Canada", invalid_statistic)
+
+
+def test_get_country_statistic_valid_country():
+    """
+    Check ValueError is raised when given an invalid country
+    """
+    invalid_country = "cnada"
+    with pytest.raises(ValueError, match=f"country '{invalid_country}' is not a valid country name."):
+        get_country_statistic(invalid_country, "population")
