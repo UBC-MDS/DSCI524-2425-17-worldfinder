@@ -1,5 +1,6 @@
 from worldfinder._internals import load_data
 
+
 def get_country_statistic(country, statistic):
     '''
     Returns an integer or float representing a specific piece of
@@ -50,7 +51,7 @@ def get_country_statistic(country, statistic):
             'statistic must be population, gdp, birth rate, cpi, or unemployment rate'
         )
 
-    country_df = load_data("countries.csv")
+    country_df = load_data("src/worldfinder/data", "countries.csv")
     single_country_df = country_df[country_df["Country"].str.lower() == country.lower()]
 
     # Check that country exists in dataframe
