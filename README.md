@@ -16,24 +16,24 @@ $ pip install worldfinder
 ### Data
 - The data for this library will consist of an object containing all countries and their respective capitals
 ### Functions
-- getCapital(country) 
+- get_capital(country) 
 
         This function will retrieve the capital given a country name passed as an input from a local data object consisting of capital and country data.
 
-- getCountries(city)
+- get_countries(city)
 
         This function searches for a specified city and returns a list of unique countries where the city is located.
 
-- checkCity(city, country)
+- check_city(city, country)
 
         This function will return a boolean on if the given city exist in the given country.
 
-- getCountryStatistic(country, statistic)
+- get_country_statistic(country, statistic)
 
         This function will return a integer or float representing a specified statistic for a given country.
 
 ## worldfinder in the Python Ecosystem
-The PyPI server hosts numerous packages related to country and city data. Among these, we have identified a few noteworthy examples that offer functionality similar to our package. For instance, a package with functionality similar to our getCapital function can be found [here](https://pypi.org/project/country-capitals/). Similarly, a package providing features comparable to our countryinfo function, which retrieves information about a specified country, is available [here](https://pypi.org/project/Countrydetails/). For functionality resembling our getCountries function, another example can be found [here](https://pypi.org/project/geopy/).
+The PyPI server hosts numerous packages related to country and city data. Among these, we have identified a few noteworthy examples that offer functionality similar to our package. For instance, a package with functionality similar to our `get_capital` function can be found [here](https://pypi.org/project/country-capitals/). Similarly, a package providing features comparable to our `get_country_statistics` function, which retrieves information about a specified country, is available [here](https://pypi.org/project/Countrydetails/). For functionality resembling our `get_countries` function, another example can be found [here](https://pypi.org/project/geopy/).
 
 However, to the best of our knowledge, there is no existing PyPI package that offers a dedicated function to verify whether a city is located in a specified country. The strength of our package lies in its locally stored data and specialized functions that facilitate searches based on city names, offering a more versatile and comprehensive approach.
 
