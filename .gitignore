@@ -8,6 +8,9 @@
 src/__pycache__
 tests/__pycache__
 
+# sphinx build folder
+docs/_build/
+
 **.ipython
 **.Jupyter
 **.local
