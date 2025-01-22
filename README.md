@@ -1,6 +1,6 @@
 # worldfinder
 
-[![Documentation Status](https://readthedocs.org/projects/worldfinder/badge/?version=latest)]
+[![Documentation Status](https://readthedocs.org/projects/worldfinder/badge/?version=latest)](https://worldfinder.readthedocs.io/en/latest/?badge=latest)
 
 This packages provides a set of four functions for working with geographical information about cities and countries. These functions will allow users to find the capital city of a country, find all countries that contain a given city name, determine if a city belongs to a specific country, and get statistics about a specified country such as population, GDP, and surface area. These functions will utilize a pre-existing database of city and country information to return the necessary information.
 
