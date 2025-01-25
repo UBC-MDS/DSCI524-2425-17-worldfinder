@@ -13,6 +13,7 @@
 * Get country statistic tutorial by @michael-gelfand in https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/pull/55
 * Add example for get_countries and fixed the example in function by @shikexi6 in https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/pull/56
 * Add check_city documentation and slight edit to read me by @fishydays in https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/pull/57
+* Update Changelog to include all changes by @BChangs99 in https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/pull/58
 
 
 **Full Changelog**: https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/compare/0.0.2...1.1.0
