@@ -17,7 +17,7 @@ def get_countries(city):
 
     Examples
     --------
-    >>> getCountries("London")
+    >>> get_countries("London")
     ["Canada", "United Kingdom", "United States"]
     """
 
