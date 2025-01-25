@@ -45,6 +45,7 @@ Our online documentation can be found [here](https://worldfinder.readthedocs.io/
 Once you install worldfinder using pip, you can access the following functions as shown below in the examples.
 
 1. **Getting the Capital City of a Country**:
+   The `get_capital` function returns the capital city of the given country:
 
    ```python
    from worldfinder.get_capital import get_capital
@@ -54,6 +55,7 @@ Once you install worldfinder using pip, you can access the following functions a
    ```
 
 2. **Getting all Countries that Contain a City**:
+   The `get_countries` function will return a list of countries where the given city name exists in:
 
    ```python
    from worldfinder.get_countries import get_countries
@@ -64,6 +66,7 @@ Once you install worldfinder using pip, you can access the following functions a
    ```
 
 3. **Checking if a City Exists in a Country**:
+   The `check_city` function checks if the given city name is a city in the given country:
 
    ```python
    from worldfinder.check_city import check_city
@@ -74,8 +77,7 @@ Once you install worldfinder using pip, you can access the following functions a
    ```
 
 4. **Getting a Country's Statistic**:
-
-   Currently there are 5 acceptable options for country statistics (gdp, population, cpi, birth rate, unemployment rate)
+   The `get_country_statistic` function returns the country statistic for the specified country. Currently there are 5 acceptable options for country statistics (gdp, population, cpi, birth rate, unemployment rate)
 
    ```python
    from worldfinder.get_country_statistic import get_country_statistic
