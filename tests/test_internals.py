@@ -13,7 +13,7 @@ def test_load_data_functionality():
          [7, 8, 9]],
         columns=['x', 'y', 'z']
     )
-    result = load_data("tests", "dummy_csv.csv")
+    result = load_data("../../tests", "dummy_csv.csv")
     pd.testing.assert_frame_equal(result, expected_df)
 
 

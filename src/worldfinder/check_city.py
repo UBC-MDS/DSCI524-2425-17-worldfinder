@@ -36,7 +36,7 @@ def check_city(city, country):
         raise ValueError(
             "Input country cannot be an empty string")
             
-    cities = load_data("src/worldfinder/data", "cities.csv")
+    cities = load_data("data", "cities.csv")
     
     if not bool(cities["country_name"].str.lower().eq(country.strip().lower()).any()):
         raise ValueError("Input country is not in database, please ensure correct spelling or try alternative names.")
