@@ -120,6 +120,6 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Contributors
 - Brian Chang
-- Michael Gelfand
+- Michael Gelfand 
 - Elaine Chu
 - Coco Shi
