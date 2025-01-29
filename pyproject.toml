@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "worldfinder"
-version = "0.0.0"
+version = "0.0.1"
 description = "This package will contain four functions that will perform actions related to cities and countries across the world."
 authors = ["Group 17"]
 license = "MIT"
@@ -12,7 +12,7 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pandas = "^2.2.3"
+pandas = ">=2.2.0,<3.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
