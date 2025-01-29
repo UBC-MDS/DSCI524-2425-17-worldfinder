@@ -30,7 +30,7 @@ def get_countries(city):
         raise ValueError("City cannot be an empty string")
 
     # Load city data from CSV (replace with correct path/filename as needed)
-    city_df = load_data("src/worldfinder/data", "cities.csv")
+    city_df = load_data("data", "cities.csv")
 
     # Check if the city exists in the dataset (case-insensitive)
     city_mask = city_df["name"].str.lower().eq(city.strip().lower())

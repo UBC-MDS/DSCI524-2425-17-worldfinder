@@ -71,7 +71,7 @@ def get_country_statistic(country, statistic):
         )
 
     # Load country csv data in to dataframe
-    country_df = load_data("src/worldfinder/data", "countries.csv")
+    country_df = load_data("data", "countries.csv")
 
     single_country_df = country_df[
         country_df["Country"].str.lower() == country.lower()

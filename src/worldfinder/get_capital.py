@@ -37,7 +37,7 @@ def get_capital(country):
     sanitized_input = country.lower().strip()
      
 
-    countries_df = load_data("src/worldfinder/data", "countries.csv")
+    countries_df = load_data("data", "countries.csv")
     country_df = countries_df[countries_df['Country'].str.lower() == sanitized_input]
 
     # Check country passed exists

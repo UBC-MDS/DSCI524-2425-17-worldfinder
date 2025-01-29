@@ -53,12 +53,19 @@ def load_data(dir_path, csv_name):
         raise ValueError(
             'Provided csv_name does not end with .csv'
         )
-    csv_path = os.path.join(dir_path, csv_name)
+    
+    # Handle paths coming from different locations for testing versus usage
+    if os.path.isabs(dir_path):
+        final_path = os.path.join(dir_path, csv_name)  # Absolute path
+    else:
+        # Assume it's relative to the package installation
+        package_dir = os.path.dirname(__file__)
+        final_path = os.path.join(package_dir, dir_path, csv_name)
 
     # Check that file exists at file path
-    if not os.path.isfile(csv_path):
+    if not os.path.isfile(final_path):
         raise FileNotFoundError(
             'File path does not exist'
         )
 
-    return pd.read_csv(csv_path)
+    return pd.read_csv(final_path)
