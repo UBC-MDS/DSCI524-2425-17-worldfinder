@@ -11,7 +11,7 @@
 ## v0.0.0 (2025-01-29)
 
 
-# Pre PSR Versioning:
+# Pre PSR Versioning: 
 
 ## v1.1.0 (24/01/2025)
 
