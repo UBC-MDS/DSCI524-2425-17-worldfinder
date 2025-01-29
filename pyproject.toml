@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "worldfinder"
-version = "0.1.0"
+version = "0.1.1"
 description = "This package will contain four functions that will perform actions related to cities and countries across the world."
 authors = ["Group 17"]
 license = "MIT"
