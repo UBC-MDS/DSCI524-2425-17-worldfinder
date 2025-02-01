@@ -106,6 +106,14 @@ To get a view of the test coverage, you can run the following command:
 $ pytest --cov=src/worldfinder
 ```
 
+## Limitations and Acknowledgments
+While this package aims to provide a comprehensive and accurate dataset of countries and their capitals, we acknowledge the following limitations and potential areas for improvement:
+
+1. Recognition of Certain Countries and Territories: The dataset may not include some countries or territories that are currently fighting for recognition, such as Taiwan, Palestine, and Kosovo. The inclusion or exclusion of these regions often depends on the sources used to compile the dataset and does not reflect the package authors' political stance or opinions.
+
+2. Countries with Multiple Capitals: Some countries have multiple capitals due to their government structure or ongoing conflicts (e.g., South Africa has three capitals: Pretoria, Bloemfontein, and Cape Town). For a full list of such cases, refer to Wikipedia's List of Countries with Multiple Capitals.
+
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
