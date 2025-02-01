@@ -71,7 +71,6 @@ Once you install worldfinder using pip, you can access the following functions a
    ```python
    from worldfinder.check_city import check_city
 
-   # Evaluate the strength of a password
    city_exists = check_city("cityName", "countryName") # Replace strings with actual values
    print(city_exists)  # Returns True if the city exists in the country otherwise False
    ```
@@ -81,7 +80,6 @@ Once you install worldfinder using pip, you can access the following functions a
 
    ```python
    from worldfinder.get_country_statistic import get_country_statistic
-   # Encrypt a password with a default seed
    statistic = get_country_statistic("countryName", "statistic") # Replace strings with actual values
    print(statistic)  # Prints the country's statistic
    ```
