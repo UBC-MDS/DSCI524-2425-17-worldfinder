@@ -112,7 +112,6 @@ While this package aims to provide a comprehensive and accurate dataset of count
 1. Recognition of Certain Countries and Territories: The dataset may not include some countries or territories that are currently fighting for recognition, such as Taiwan, Palestine, and Kosovo. The inclusion or exclusion of these regions often depends on the sources used to compile the dataset and does not reflect the package authors' political stance or opinions.
 
 2. Countries with Multiple Capitals: Some countries have multiple capitals due to their government structure or ongoing conflicts (e.g., South Africa has three capitals: Pretoria, Bloemfontein, and Cape Town). For a full list of such cases, refer to Wikipedia's List of Countries with Multiple Capitals.
-Future Improvements:
 
 
 ## Contributing
