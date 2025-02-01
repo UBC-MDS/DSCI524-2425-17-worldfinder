@@ -48,4 +48,9 @@ def get_capital(country):
     
     capital = country_df.iloc[0]['Capital/Major City']
 
+    if capital is None or capital == "" or str(capital).lower() == "nan":
+        raise ValueError(
+            'Country was found but the capital was not found.'
+        )
+
     return capital
