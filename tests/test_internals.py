@@ -65,3 +65,25 @@ def test_load_data_bad_csv_path():
     bad_path_dir = "incorrect_path"
     with pytest.raises(FileNotFoundError, match='File path does not exist'):
         load_data(bad_path_dir, bad_csv_name)
+
+def test_empty_csv_name():
+    """
+    Check ValueError is raised when given an empty csv_name
+    """
+    empty_csv_name = ""
+    with pytest.raises(
+        ValueError,
+        match = "csv_name cannot be an empty string"
+    ):
+        load_data("tests", empty_csv_name)
+
+def test_empty_dir_path():
+    """
+    Check ValueError is raised when given an empty csv_name
+    """
+    dir_path = ""
+    with pytest.raises(
+        ValueError,
+        match = "dir_path cannot be an empty string"
+    ):
+        load_data(dir_path, "dummy_csv.csv")
