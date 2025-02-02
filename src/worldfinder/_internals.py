@@ -48,6 +48,16 @@ def load_data(dir_path, csv_name):
             f"dir_path should be a string, instead got '{type(dir_path)}'"
         )
 
+    # Check that csv_name is not empty
+    if csv_name == '':
+        raise ValueError(
+            "csv_name cannot be an empty string")
+    
+     # Check that dir_path is not empty
+    if dir_path == '':
+        raise ValueError(
+            "dir_path cannot be an empty string")
+      
     # Check that csv_name ends with .csv
     if not csv_name.endswith('.csv'):
         raise ValueError(
