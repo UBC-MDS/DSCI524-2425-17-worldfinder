@@ -14,6 +14,16 @@ def get_capital(country):
     str
         The capital city corresponding to the country passed
     
+    Raises:
+    -------
+    TypeError
+        If country input is not a string.
+
+    ValueError
+        If country input contains an empty string OR
+        If country input is not a valid country OR
+        If no capital was found for given country
+
     Examples:
     ---------
     get_capital("Italy")
