@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.2 (2025-02-02)
+
+### Bug Fixes
+
+- Locating test folder path bug
+  ([`49755cd`](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/commit/49755cd8e0b03a14cb663a0b9aae19d843a6fbeb))
+
+
 ## v0.1.1 (2025-01-29)
 
 ### Bug Fixes
