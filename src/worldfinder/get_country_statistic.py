@@ -64,7 +64,7 @@ def get_country_statistic(country, statistic):
     stat_list = ["population", "gdp", "birth rate", "cpi", "unemployment rate"]
 
     # Check that statistic is a correct option
-    if statistic.lower() not in stat_list:
+    if statistic.lower().strip() not in stat_list:
         raise ValueError(
             'statistic must be population, gdp, birth rate, cpi, or '
             'unemployment rate'
@@ -74,7 +74,7 @@ def get_country_statistic(country, statistic):
     country_df = load_data("data", "countries.csv")
 
     single_country_df = country_df[
-        country_df["Country"].str.lower() == country.lower()
+        country_df["Country"].str.lower() == country.lower().strip()
     ]
 
     # Check that country exists in dataframe
@@ -86,6 +86,6 @@ def get_country_statistic(country, statistic):
     # Convert column names to lowercase
     single_country_df.columns = single_country_df.columns.str.lower()
 
-    stat = single_country_df.iloc[0][statistic.lower()]
+    stat = single_country_df.iloc[0][statistic.lower().strip()]
 
     return stat
