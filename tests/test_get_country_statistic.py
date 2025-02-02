@@ -80,3 +80,11 @@ def test_get_country_statistic_valid_country():
     invalid_country = "cnada"
     with pytest.raises(ValueError, match=f"country '{invalid_country}' is not a valid country name."):
         get_country_statistic(invalid_country, "population")
+
+
+def test_get_country_with_spaces_input():
+    """
+    Test that the function returns when the country is passed with trailing/leading spaces 
+    """
+    result = get_country_statistic("   Canada    ", "population")
+    assert result == '36,991,981'
