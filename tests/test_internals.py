@@ -1,6 +1,8 @@
 import pytest
 import pandas as pd
 from worldfinder._internals import load_data
+import os
+from pathlib import Path
 
 
 def test_load_data_functionality():
@@ -13,7 +15,12 @@ def test_load_data_functionality():
          [7, 8, 9]],
         columns=['x', 'y', 'z']
     )
-    result = load_data("../../tests", "dummy_csv.csv")
+
+    repo_root = Path(__file__).resolve().parent.parent  # obtain absolute path to root of repo
+    test_data_path = repo_root / "tests"  # Append path to the test folder
+    dir_path = str(test_data_path)
+
+    result = load_data(dir_path, "dummy_csv.csv")
     pd.testing.assert_frame_equal(result, expected_df)
 
 
