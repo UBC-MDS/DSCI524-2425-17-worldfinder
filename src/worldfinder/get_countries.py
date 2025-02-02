@@ -15,6 +15,15 @@ def get_countries(city):
         A list of unique countries (in their original case) that contain the 
         specified city. The list will be deduplicated.
 
+    Raises:
+    -------
+    TypeError
+        If city input is not a string.
+
+    ValueError
+        If city input contains an empty string OR
+        If city input is not a valid city
+
     Examples
     --------
     >>> get_countries("London")

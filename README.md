@@ -9,8 +9,8 @@ This packages provides a set of four functions for working with geographical inf
 ### Data
 The data for this library will come from two csv files containing country and city information.
 
-- cities.csv: Contains information about cities around the world. Data was retrieved from Darshan Gada's GitHub repository [here](https://github.com/dr5hn/countries-states-cities-database).
-- countries.csv: Contains information about countries around the world. Data was retrieved from Nidula Elgiriyewithana's Kaggle dataset [here](https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023).
+- cities.csv: Contains information about cities around the world. Data was retrieved from Darshan Gada's GitHub repository. It is an open source database with information sourced from mutliple sources and can be accessed [here](https://github.com/dr5hn/countries-states-cities-database).
+- countries.csv: Contains information about countries around the world. Data was retrieved from Nidula Elgiriyewithana's Kaggle dataset. It is a dataset that was compiled from multiple sources in 2023, it can be [here](https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023).
 
 ### Functions
 - `get_capital(country)`:
