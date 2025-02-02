@@ -72,3 +72,13 @@ def test_get_capital_multiple_capitals():
     actual = get_capital('South Africa')
 
     assert actual in expected
+
+def test_capital_not_returned():
+    """
+    Test that the function fails gracefully when a capital is not returned
+    """
+
+    with pytest.raises(ValueError, match = 'Country was found but the capital was not found.'):
+        get_capital("Singapore")
+
+
