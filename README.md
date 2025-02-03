@@ -16,7 +16,7 @@ This packages provides a set of four functions for working with geographical inf
 The data for this library will come from two csv files containing country and city information.
 
 - cities.csv: Contains information about cities around the world. Data was retrieved from Darshan Gada's GitHub repository. It is an open source database with information sourced from mutliple sources and can be accessed [here](https://github.com/dr5hn/countries-states-cities-database).
-- countries.csv: Contains information about countries around the world. Data was retrieved from Nidula Elgiriyewithana's Kaggle dataset. It is a dataset that was compiled from multiple sources in 2023, it can be [here](https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023).
+- countries.csv: Contains information about countries around the world. Data was retrieved from Nidula Elgiriyewithana's Kaggle dataset. It is a dataset that was compiled from multiple sources in 2023, it can be accessed [here](https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023).
 
 ### Functions
 - `get_capital(country)`:
@@ -89,6 +89,7 @@ Once you install worldfinder using pip, you can access the following functions a
    statistic = get_country_statistic("countryName", "statistic") # Replace strings with actual values
    print(statistic)  # Prints the country's statistic
    ```
+For more detailed examples on function usage, please refer to this [tutorial](https://worldfinder.readthedocs.io/en/latest/example.html).
 
 ### Running Tests
 
