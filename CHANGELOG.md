@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v1.0.0 (2025-02-03)
+
+### Documentation
+
+- Add link in readme to tutorial
+  ([`e417f2b`](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/commit/e417f2ba2339e482f1728b8fd727a9794a11d969))
+
+### Features
+
+- Update whitespace to trigger major release
+  ([`c5db4f4`](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/commit/c5db4f46d4858f5fe62f96d11a4cacdc9b6bc232))
+
+
 ## v0.1.3 (2025-02-03)
 
 ### Bug Fixes
