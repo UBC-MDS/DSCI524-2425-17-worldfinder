@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.1.3 (2025-02-03)
+
+### Bug Fixes
+
+- Add missing codecov badge to README
+  ([`433f7c5`](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/commit/433f7c55937fa029acb9d75305e71141f94ccd4b))
+
+- Feedback addressed by adding badges to README
+  ([`051f3b7`](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/commit/051f3b768a7dd605e134d48c8622c3ce15b5a4ab))
+
+
 ## v0.1.2 (2025-02-02)
 
 ### Bug Fixes
