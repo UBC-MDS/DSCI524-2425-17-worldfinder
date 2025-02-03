@@ -1,6 +1,12 @@
 # worldfinder
 
 [![Documentation Status](https://readthedocs.org/projects/worldfinder/badge/?version=latest)](https://worldfinder.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/UBC-MDS/DSCI524-2425-17-worldfinder/graph/badge.svg?token=ACTS1cZ33z)](https://codecov.io/gh/UBC-MDS/DSCI524-2425-17-worldfinder)
+![ci-cd](https://github.com/UBC-MDS/DSCI524-2425-17-worldfinder/actions/workflows/ci-cd.yml/badge.svg)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![PyPI - Version](https://img.shields.io/pypi/v/worldfinder)](https://pypi.org/project/worldfinder/)
+
 
 This packages provides a set of four functions for working with geographical information about cities and countries. These functions will allow users to find the capital city of a country, find all countries that contain a given city name, determine if a city belongs to a specific country, and get statistics about a specified country such as population, GDP, and surface area. These functions will utilize a pre-existing database of city and country information to return the necessary information.
 
