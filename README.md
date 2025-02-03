@@ -8,7 +8,7 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/worldfinder)](https://pypi.org/project/worldfinder/)
 
 
-This packages provides a set of four functions for working with geographical information about cities and countries. These functions will allow users to find the capital city of a country, find all countries that contain a given city name, determine if a city belongs to a specific country, and get statistics about a specified country such as population, GDP, and surface area. These functions will utilize a pre-existing database of city and country information to return the necessary information.
+This packages provides a set of four functions for working with geographical information about cities and countries. These functions will allow users to find the capital city of a country, find all countries that contain a given city name, determine if a city belongs to a specific country, and get statistics about a specified country such as population, GDP, and surface area. These functions will utilize a pre-existing database of city and country information to return the necessary information. 
 
 ## Functions and Data
 
